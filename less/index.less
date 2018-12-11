@@ -1,0 +1,203 @@
+@import 'base.less';
+
+body {
+    background-color: #f7f7f7;
+}
+// 头部区域
+#header {
+    padding: 10px;
+    display: flex;
+    border-bottom: 1px solid #dddddd;
+    > a {
+        width: 30px;
+        color: #d3079e;
+        font-size: 14px;
+        text-align: center;
+    }
+    > span {
+        flex: 1;
+        text-align: center;
+        line-height: 25px;
+    }
+    > img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+// 轮播图区域
+#slide{
+	.swiper-wrapper {
+		width: 700vw;
+		display:flex;
+		transform:translateX(-100vw);
+	}
+	.swiper-slide {
+		width: 100vw;
+    }
+    a {
+        display: block;
+    }	
+	img{
+		width: 100vw;
+	}
+	.swiper-pagination-bullet-active {
+		background-color: #fff;
+	}
+}
+
+// 景点区域
+#jingDian {
+    padding: 4px 0;
+    .nav {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                padding: 4px;
+                width: 33vw;
+                a  {
+                    display: block;
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+// 热门区域
+#jiPiao {
+    border-top: 1px solid #e6e6e6;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            border-left: 1px solid #e6e6e6;
+            border-bottom: 1px solid #e6e6e6;
+            width: 25vw;
+            a {
+                display: block;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// 亲子区域
+
+#qinZi {
+    margin: 15px 0;
+    display: flex;
+    .product-left {
+        border-right: 1px solid #e6e6e6;
+        border-bottom: 1px solid #e6e6e6;
+        width: 50vw;
+        >a {
+            display: block;
+            >img {
+                width: 100%;
+            }
+        }
+    }
+    .product-right {
+        width: 50vw;
+        >a {
+            display: block;
+            border-bottom: 1px solid #e6e6e6;
+            >img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// 热门区域
+#reMen {
+    .title {
+        padding-left: 18px;
+        background-color: #f1f1f1;
+        span {
+            font-size: 18px;
+            line-height: 35px;
+        }
+    }
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        border-top: 1px solid #dddddd;
+        margin-bottom: 14px;
+        a {
+            display: block;
+            border-bottom: 1px solid #dddddd;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+#zhouMo {
+    .title {
+        font-size: 12px;
+        line-height: 44px;
+        display: flex;
+        span {
+            display: block;
+            width: 50vw;
+            text-align: center;
+            &:nth-child(1) {
+                color: #d3079e;
+            }
+        }
+    }
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        a {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #dddddd;
+            display: block;
+            img {
+                width: 100%;
+            }
+            span {
+                line-height: 35px;
+                font-size: 14px;
+                color: #555555;
+            }
+        }
+    }
+    .more {
+        background-color: #fff;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 15px;
+        span {
+            display: block;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+        }
+    }
+}
+
+#footer {
+    background-color: #d3079e;
+    height: 30px;
+    a {
+       float: left;
+       color: #fff;
+       font-size: 12px;
+       line-height: 30px;
+       padding: 0 10px;
+       &:nth-child(2) {
+           float: right;
+       }
+    }
+}
